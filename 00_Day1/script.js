@@ -29,3 +29,25 @@ document.getElementById('challenge-5').addEventListener('click',function (){
     let counter = Number(this.textContent);
     this.textContent = counter + 1;
 })
+
+
+// Challenge 6: Add an input inside; display its value live below it (on change).
+const div6 = document.getElementById('challenge-6');
+
+const input = document.createElement('input');
+const output = document.createElement('p');
+
+div6.appendChild(input);
+div6.appendChild(output);
+
+input.addEventListener('input',function(){
+    output.textContent = input.value;
+})
+
+
+
+
+
+
+
+

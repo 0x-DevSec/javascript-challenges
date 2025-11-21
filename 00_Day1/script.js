@@ -9,3 +9,15 @@ window.addEventListener('click',function(){
     const div2 = document.getElementById('challenge-2')
     div2.style.backgroundColor = "blue";
 })
+
+// Challenge 3: On click, change all divs’ background colors.
+document.getElementById("challenge-3").addEventListener('click',function(){
+    const divall = document.querySelectorAll(".container div")
+    divall.forEach(div => {
+        div.style.backgroundColor = "red";
+    })
+})
+
+
+
+

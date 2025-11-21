@@ -92,6 +92,15 @@ div8.addEventListener('mouseleave', function () {
     div8.style.transform = "scale(1)";
 });
 
+// challenge9: On double-click, hide this div.
+
+const div9 = document.getElementById('challenge-9');
+
+div9.addEventListener('dblclick',function(){
+    div9.style.display = 'none';
+});
+
+
 
 
 

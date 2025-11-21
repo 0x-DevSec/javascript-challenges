@@ -18,6 +18,10 @@ document.getElementById("challenge-3").addEventListener('click',function(){
     })
 })
 
-
+// challenge 4: On click, change this div’s text content.
+document.getElementById("challenge-4").addEventListener('click', function(){
+    const div4 = document.getElementById('challenge-4');
+    div4.innerText = "text changed";
+})
 
 

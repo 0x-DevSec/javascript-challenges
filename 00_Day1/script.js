@@ -24,4 +24,8 @@ document.getElementById("challenge-4").addEventListener('click', function(){
     div4.innerText = "text changed";
 })
 
-
+// challenge 5: On click, increment a counter displayed inside this div.
+document.getElementById('challenge-5').addEventListener('click',function (){
+    let counter = Number(this.textContent);
+    this.textContent = counter + 1;
+})

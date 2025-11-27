@@ -82,6 +82,22 @@ input.addEventListener('input', () => {
     display.textContent = input.value;
 });
 
+// Challenge #07: Selectable Employee List
+const ch7 = document.querySelector('.chall7');
+
+workers.forEach(worker => {
+    const li = document.createElement('li');
+    li.textContent = worker.name;
+
+    li.addEventListener('click', () => {
+        li.classList.toggle('selected');
+    });
+
+    ch7.appendChild(li);
+});
+
+
+
 
 
 

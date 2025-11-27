@@ -66,13 +66,22 @@ workers.forEach(element => {
     btn.textContent = "Show Role";
 
     btn.addEventListener('click', () => {
-        
+
         alert(`${element.name}'s role is: ${element.role}`);
     });
 
     li.appendChild(btn);
     ch5.appendChild(li);
 });
+
+// Challenge #06: Real-Time Input Display
+const input = document.getElementById('liveInput');
+const display = document.getElementById('display');
+
+input.addEventListener('input', () => {
+    display.textContent = input.value;
+});
+
 
 
 

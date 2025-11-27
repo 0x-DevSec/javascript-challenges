@@ -96,6 +96,17 @@ workers.forEach(worker => {
     ch7.appendChild(li);
 });
 
+// Challenge #09: Filter by City (Paris)
+
+const ch9 = document.querySelector('.chall9 ul');
+const parisWorkers = workers.filter(worker => worker.city === "Paris");
+parisWorkers.forEach(worker => {
+    const li = document.createElement('li');
+    li.textContent = `${worker.name} (${worker.city})`;
+    ch9.appendChild(li);
+});
+
+
 
 
 

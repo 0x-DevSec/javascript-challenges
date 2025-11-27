@@ -35,6 +35,29 @@ const workers = [
     }
  })
 
+ // Challenge #04 : Show "Active" or "Inactive" for each employee
+ const ch4 = document.querySelector('.chall4 ul');
+
+workers.forEach(element => {
+    const li = document.createElement('li');
+
+    const status = document.createElement('span');
+    status.textContent = element.active ? "active" : "inactive";
+    status.style.color = element.active ? "green" : "red";
+
+    li.textContent = `${element.name} `;
+    li.appendChild(status);
+
+    ch4.appendChild(li);
+});
+
+// Challenge #05: Role Alert Button (Button that shows employee role in an alert)
+
+
+
+
+
+
 
 
 

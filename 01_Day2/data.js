@@ -10,5 +10,21 @@ const workers = [
 // Challenge #01 : Total Employee Count
  const ch1 = document.querySelector('.chall1 p');
  const Total = workers.length;
-
  ch1.innerHTML = `Total Employee : ${Total}`;
+
+// Challenge #02: Employee List
+ const ch2 = document.querySelector('.chall2 ul');
+
+ function employeeList()
+ {
+    workers.forEach(element => {
+        const li = document.createElement('li');
+        li.textContent = element.name,
+        ch2.appendChild(li);
+    });
+ }
+
+ employeeList();
+
+
+

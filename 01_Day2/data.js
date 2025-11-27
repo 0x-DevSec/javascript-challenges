@@ -23,8 +23,21 @@ const workers = [
         ch2.appendChild(li);
     });
  }
-
  employeeList();
+
+ // Challenge #03: Display name and role of employee ID 3
+ // Name: Claire Bernard | Role: Designer
+ const ch3 = document.querySelector('.chall3 p');
+ workers.forEach( element => {
+    if (element.id  === 3)
+    {
+        ch3.innerHTML = `Name: ${element.name} Role: ${element.role}`;
+    }
+ })
+
+
+
+
 
 
 

@@ -53,6 +53,32 @@ workers.forEach(element => {
 
 // Challenge #05: Role Alert Button (Button that shows employee role in an alert)
 
+const ch5 = document.querySelector('.chall5 ul');
+
+workers.forEach(element => {
+
+    const li = document.createElement('li');
+
+    li.textContent = element.name + " ";
+
+    const btn = document.createElement('button');
+
+    btn.textContent = "Show Role";
+
+    btn.addEventListener('click', () => {
+        
+        alert(`${element.name}'s role is: ${element.role}`);
+    });
+
+    li.appendChild(btn);
+    ch5.appendChild(li);
+});
+
+
+
+
+
+
 
 
 

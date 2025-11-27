@@ -106,6 +106,11 @@ parisWorkers.forEach(worker => {
     ch9.appendChild(li);
 });
 
+// Challenge #10: Delayed Text Update
+const ch10Text = document.querySelector('.chall10 p');
+setTimeout(() => {
+    ch10Text.textContent = "Title updated after 6 seconds!";
+}, 6000);
 
 
 
